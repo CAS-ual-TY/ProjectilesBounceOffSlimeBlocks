@@ -1,0 +1,14 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="MIT License"
+issueTrackerURL="https://github.com/CAS-ual-TY/ProjectilesBounceOffSlimeBlocks/issues"
+
+[[mods]]
+    modId="pbosb"
+    version="${file.jarVersion}"
+    displayName="PBOSB"
+        displayURL="https://github.com/CAS-ual-TY/ProjectilesBounceOffSlimeBlocks"
+    logoFile="logo.png"
+    credits="Mojang and the Minecraft Forge Team"
+    authors="CAS_ual_TY"
+    description='''Makes all projectiles (eg. Arrows, Tridents, ...) bounce off slime balls.'''

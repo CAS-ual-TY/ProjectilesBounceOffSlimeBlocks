@@ -30,7 +30,7 @@ public class PBOSB
     {
         if(event.getRayTraceResult().getType() == HitResult.Type.BLOCK && event.getRayTraceResult() instanceof BlockHitResult hit)
         {
-            Level level = event.getProjectile().level;
+            Level level = event.getProjectile().level();
             BlockPos pos = hit.getBlockPos();
             BlockState blockState = level.getBlockState(pos);
             

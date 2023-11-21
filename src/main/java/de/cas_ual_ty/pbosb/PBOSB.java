@@ -9,9 +9,9 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.entity.ProjectileImpactEvent;
-import net.minecraftforge.fml.common.Mod;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.entity.ProjectileImpactEvent;
 import org.slf4j.Logger;
 
 @Mod(PBOSB.MOD_ID)
@@ -23,7 +23,7 @@ public class PBOSB
     
     public PBOSB()
     {
-        MinecraftForge.EVENT_BUS.addListener(this::projectileImpact);
+        NeoForge.EVENT_BUS.addListener(this::projectileImpact);
     }
     
     private void projectileImpact(ProjectileImpactEvent event)

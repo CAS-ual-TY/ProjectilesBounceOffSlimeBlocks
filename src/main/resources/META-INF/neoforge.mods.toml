@@ -10,20 +10,19 @@ issueTrackerURL="https://github.com/CAS-ual-TY/ProjectilesBounceOffSlimeBlocks/i
     displayURL="https://github.com/CAS-ual-TY/ProjectilesBounceOffSlimeBlocks"
     logoFile="logo.png"
     credits="Mojang and the NeoForged Team"
-    authors="${mod_authors}"
-    displayTest="MATCH_VERSION"
-    description='''${mod_description}'''
+    authors="CAS_ual_TY"
+    description='''Makes all projectiles (eg. Arrows, Tridents, ...) bounce off slime blocks.'''
 
 [[dependencies.${mod_id}]] #optional
     modId="neoforge" #mandatory
-    mandatory=true #mandatory
-    versionRange="${neo_version_range}" #mandatory
+    type="required" #mandatory
+    versionRange="[${neo_version},)" #mandatory
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.${mod_id}]]
     modId="minecraft"
-    mandatory=true
+    type="required"
     versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
